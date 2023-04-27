@@ -18,8 +18,8 @@ app.use('/api', require('./routes/logs.routes'));
 app.use('/api', require('./routes/project.routes'));
 
 
-app.listen(PORT, () => {
-  console.log(`Server running on PORT ${PORT} 🚀`);
+// app.listen(PORT, () => {
+//   console.log(`Server running on PORT ${PORT} 🚀`);
   
-})
+// })
 module.exports = app;
