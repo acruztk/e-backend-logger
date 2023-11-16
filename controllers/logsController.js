@@ -8,7 +8,7 @@ const {
   schemaLogsJoi,
 } = require('../models');
 
-class logsCotnroller {
+class logsController {
   async all(req, res) {
     const data = await logsModel.find();
     try {
@@ -148,4 +148,4 @@ class logsCotnroller {
   }
 }
 
-module.exports = new logsCotnroller();
+module.exports = new logsController();
