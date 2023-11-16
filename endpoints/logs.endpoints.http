@@ -1,0 +1,64 @@
+GET http://localhost:3000/api/logs
+Authorization: RffFHh5ayzt7plaNOaWIFuCE8ai5hZTV
+RffFHh5ayzt7plaNOaWIFuCE8ai5hZTV
+###
+
+POST http://localhost:3000/api/logs
+Content-Type: application/json
+Authorization: RffFHh5ayzt7plaNOaWIFuCE8ai5hZTV
+
+{
+    "application_id" : "6555884611ef28b5fe50c520",
+    "type": "warning",
+    "priority": "medium",
+    "path": "/api/sales",
+    "message": "The query took 3 seconds",
+    "request": {
+        "method": "GET ",
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": {}
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": {
+            "data": [
+                {
+                    "id": "6555884611ef28b5fe50c520",
+                    "name": "John Doe"
+                }
+            ]
+        }
+    }
+}
+###
+
+GET http://localhost:3000/api/logs/655649c0707310c6d663fe82
+Authorization: DksBWlU3py4mnmialUNsztQ7lkqj83oS
+
+###
+
+PUT  http://localhost:3000/api/logs/655676934015f3078ca74b28
+Content-Type: application/json
+
+{
+    "application_id": "65558815412130644dddbdd3",
+    "type": "error",
+    "priority": "high",
+    "path": "/api/users",
+    "message": "Error while fetching users",
+    "createdAt": "2023-11-16T16:56:32.643Z",
+    "updatedAt": "2023-11-16T16:56:32.643Z",
+    "id": "655649c0707310c6d663fe82"
+}
+
+###
+DELETE http://localhost:3000/api/logs/655676934015f3078ca74b28
+Authorization: RffFHh5ayzt7plaNOaWIFuCE8ai5hZTV
+
+
+
