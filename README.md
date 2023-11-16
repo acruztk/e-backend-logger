@@ -44,12 +44,12 @@ In this CRUD we will use the following technologies: JOI, for validation of payl
                         }]
                     }
     
-    take the generated id and insert it in the following request and you token or password
+    take the generated id and insert it in the following request along with your token or password
     2.- POST /api/logs/authorization
         body params =
                      {
                         application_id: "",
-                        token: "",
+                        token: "yor token or password",
                      }
         response =
                     {
@@ -83,7 +83,7 @@ In this CRUD we will use the following technologies: JOI, for validation of payl
                         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6InBhc3N3b3JkMTIzNDUiLCJhcHBsaWNhdGlvbl9pZCI6IjY1NTViZWM4OGNhMGI1YTY3ZjUxMWZjMiIsImlhdCI6MTcwMDExODU1OCwiZXhwIjoxNzAwMTI1NzU4fQ.srjnZEwdHSa5plRgU66YpNGTMJSObTbV8_NI1PTZ6cE"
                     }
 
-    4.- well now for use all operations
+    4.- Now for use all operations
         For rest of operations you need Authorization
                     header ={
                         "Authorization": "Bearer 'your token generated' "
